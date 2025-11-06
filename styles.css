@@ -1,0 +1,193 @@
+/* Calculadora de Costos de Impresión 3D - Estilos */
+
+body {
+    background-color: #f5f7fa;
+    padding: 20px 0;
+    transition: background-color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark-mode {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.section-title {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.variables-section .section-title {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.model-section .section-title {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.results-section .section-title {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.result-item {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+    color: #2d3748;
+}
+
+.result-item:hover {
+    transform: translateX(5px);
+}
+
+.result-value {
+    font-size: 1.3em;
+    color: #667eea;
+    font-weight: 700;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.help-text {
+    font-size: 0.85em;
+    color: #718096;
+    font-style: normal;
+    margin-top: 4px;
+}
+
+.input-group-text {
+    background-color: #edf2f7;
+    border-color: #e2e8f0;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 12px 12px 0 0 !important;
+    padding: 20px;
+}
+
+/* Modo Oscuro */
+body.dark-mode .card {
+    background-color: #161b22;
+    border-color: #30363d;
+}
+
+body.dark-mode .card-body {
+    background-color: #0d1117;
+}
+
+body.dark-mode .card-header {
+    background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%) !important;
+}
+
+body.dark-mode .form-control {
+    background-color: #0d1117;
+    border-color: #30363d;
+    color: #c9d1d9;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #161b22;
+    border-color: #58a6ff;
+    color: #c9d1d9;
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
+}
+
+body.dark-mode .input-group-text {
+    background-color: #21262d;
+    border-color: #30363d;
+    color: #8b949e;
+}
+
+body.dark-mode .help-text {
+    color: #8b949e;
+}
+
+body.dark-mode .form-label {
+    color: #c9d1d9;
+}
+
+body.dark-mode .result-item {
+    background-color: #161b22;
+    border-left-color: #58a6ff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    color: #c9d1d9;
+}
+
+body.dark-mode .result-value {
+    color: #58a6ff;
+}
+
+body.dark-mode .section-title {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Botón de toggle modo oscuro */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    color: #2d3748;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #21262d;
+    color: #f0e68c;
+    border-color: #30363d;
+}
