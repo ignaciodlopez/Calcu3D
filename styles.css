@@ -191,3 +191,40 @@ body.dark-mode .dark-mode-toggle {
     color: #f0e68c;
     border-color: #30363d;
 }
+
+/* Footer */
+.footer {
+    background-color: transparent;
+    border-top: none;
+    margin-top: 20px;
+    padding: 10px 0 !important;
+}
+
+.footer .text-muted {
+    color: #a0aec0 !important;
+    font-size: 0.85rem;
+}
+
+.footer a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+body.dark-mode .footer .text-muted {
+    color: #6e7681 !important;
+}
+
+body.dark-mode .footer a {
+    color: #58a6ff;
+}
+
+body.dark-mode .footer a:hover {
+    color: #79c0ff;
+}

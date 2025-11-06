@@ -1,0 +1,8 @@
+{
+  "name": "calcu3d",
+  "compatibility_date": "2025-11-06",
+  "assets": {
+    "directory": "./"
+  },
+  "_comment": "Este archivo es necesario para desplegar el sitio en Cloudflare Pages. Le indica a Cloudflare que este es un sitio estático y que debe servir todos los archivos del directorio actual."
+}
